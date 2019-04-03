@@ -16,11 +16,11 @@ describe('lib/countWordRepeats.js', () => {
       + '</head>'
       + '<!-- The information between the BODY and /BODY tags is displayed.-->'
       + '<body>'
-      + '<h1>Enter the main heading, usually the same as the title.</h1>'
+      + '<h1>Enter the main heading, usually the same as the title. </h1>'
       + '<p>Be <b>bold</b> in stating your key points. Put them in a list: </p>'
       + '<ul>'
-      + '<li>The first item in your list</li>'
-      + '<li>The second item; <i>italicize</i> key words</li>'
+      + '<li>The first item in your list.</li>'
+      + '<li>The second item; <i>italicize</i> key words. </li>'
       + '</ul>'
       + '<p>Improve your image by including an image. </p>'
       + '<p><img src="http://www.mygifs.com/CoverImage.gif" alt="A Great HTML Resource"></p>'
@@ -29,7 +29,7 @@ describe('lib/countWordRepeats.js', () => {
       + '<hr>'
       + '<p>Finally, link to <a href="page2.html">another page</a> in your own Web site.</p>'
       + '<!-- And add a copyright notice.-->'
-      + '<p>&#169; Wiley Publishing Publishing Publishing Publishing Publishing, 2011</p>'
+      + '<p>&#169; Wiley Publishing Publishing Publishing Publishing Publishing, 2011.</p>'
       + '<script>const someFunc = (number) => number + 1;</script>\n\n'
       + '<style>p {\n'
       + '  text-align: center;\n'
@@ -49,23 +49,11 @@ describe('lib/countWordRepeats.js', () => {
       },
       {
         count: 1,
-        keyword: 'displayed',
-      },
-      {
-        count: 1,
-        keyword: 'windowenter',
-      },
-      {
-        count: 1,
-        keyword: 'heading',
-      },
-      {
-        count: 1,
         keyword: 'usually',
       },
       {
         count: 1,
-        keyword: 'titlebe',
+        keyword: 'title',
       },
       {
         count: 1,
@@ -89,11 +77,15 @@ describe('lib/countWordRepeats.js', () => {
       },
       {
         count: 1,
-        keyword: 'title',
+        keyword: 'italicize',
       },
       {
         count: 1,
-        keyword: 'wordsimprove',
+        keyword: 'words',
+      },
+      {
+        count: 1,
+        keyword: 'heading',
       },
       {
         count: 1,
@@ -133,7 +125,7 @@ describe('lib/countWordRepeats.js', () => {
       },
       {
         count: 1,
-        keyword: 'italicize',
+        keyword: 'improve',
       },
     ];
 
