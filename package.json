@@ -1,0 +1,39 @@
+{
+  "name": "text-analysis-api",
+  "version": "1.0.0",
+  "description": "Gets array of URLs, and return PDF table top-3 repeated words with more than 4 letters",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "debug": "node $NODE_DEBUG_OPTION app.js",
+    "test": "mocha",
+    "eslint": "eslint . --fix --ignore-pattern node_modules/",
+    "deploy": "now --public && now alias"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnqq/text-analysis-api.git"
+  },
+  "author": "nnqq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nnqq/text-analysis-api/issues"
+  },
+  "homepage": "https://github.com/nnqq/text-analysis-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-rate-limit": "^3.4.0",
+    "html-pdf": "^2.2.0",
+    "jsdom": "^14.0.0",
+    "node-fetch": "^2.3.0",
+    "pino": "^5.12.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "mocha": "^6.0.2"
+  }
+}
