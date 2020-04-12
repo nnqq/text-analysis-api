@@ -40,3 +40,7 @@ npm start
 ```
 npm test
 ```
+
+## Связаться с автором
+
+[Telegram](https://t.me/aveDenis)
